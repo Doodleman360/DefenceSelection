@@ -73,6 +73,9 @@ bool draging = false;
         int lastWidth = last.frame.size.width;
         
         for (SKSpriteNode *child in self.selected) {
+            
+            #warning Hard Coded divider location
+            
             [child setPosition:CGPointMake([self mapWithOldMin:0 oldMax:[self.selected count]-1 newMin:firstWidth/2 newMax:self.frame.size.width - (lastWidth/2) - 200 oldValue:[self.selected indexOfObject:child]], self.frame.size.height/2)];
         }
         for (SKSpriteNode *child in self.notSelected) {
@@ -154,23 +157,27 @@ bool draging = false;
         for (SKSpriteNode *child in self.children) {
             if ([child.name containsString:@"drag"]) {
                 
-                child.position = location;
-                
                 //remove drag tag
                 
                 child.name = [child.name substringToIndex:[child.name length] - 5];
+                
+                for (SKSpriteNode *testChild in self.children) {
+                    if (CGRectContainsPoint(testChild.frame, location)) {
+                        [self.selected exchangeObjectAtIndex:[self.selected indexOfObject:child] withObjectAtIndex:[self.selected indexOfObject:testChild]];
+                    }
+                }
             }
         }
     }
-    
 }
+
 
 #pragma mark - Suporting Functions
 
 
 -(void)setUpNodes {
     
-#warning Hard Coded
+#warning Hard Coded divider location
     
     SKShapeNode *divider = [SKShapeNode node];
     CGMutablePathRef pathToDraw = CGPathCreateMutable();
