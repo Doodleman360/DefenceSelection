@@ -86,7 +86,7 @@
 		F9EC11C91C887C0200098813 = {
 			isa = PBXGroup;
 			children = (
-				F9EC11D41C887C0300098813 /* SharkScout V.2 */,
+				F9EC11D41C887C0300098813 /* DefenceSelection */,
 				F9EC11F31C887C0300098813 /* SharkScout V.2Tests */,
 				F9EC11FE1C887C0300098813 /* SharkScout V.2UITests */,
 				F9EC11D31C887C0200098813 /* Products */,
@@ -103,7 +103,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F9EC11D41C887C0300098813 /* SharkScout V.2 */ = {
+		F9EC11D41C887C0300098813 /* DefenceSelection */ = {
 			isa = PBXGroup;
 			children = (
 				F9EC11D81C887C0300098813 /* AppDelegate.h */,
@@ -119,6 +119,7 @@
 				F9EC11EB1C887C0300098813 /* Info.plist */,
 				F9EC11D51C887C0300098813 /* Supporting Files */,
 			);
+			name = DefenceSelection;
 			path = "SharkScout V.2";
 			sourceTree = "<group>";
 		};
