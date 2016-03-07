@@ -65,8 +65,15 @@ bool draging = false;
     /* Called before each frame is rendered */
     
     if (!draging) {
+        
+        SKSpriteNode *first = [self.selected objectAtIndex:0];
+        SKSpriteNode *last = [self.selected lastObject];
+        
+        int firstWidth = first.frame.size.width;
+        int lastWidth = last.frame.size.width;
+        
         for (SKSpriteNode *child in self.selected) {
-            [child setPosition:CGPointMake([self mapWithOldMin:0 oldMax:[self.selected count]-1 newMin:child.frame.size.width/2 newMax:self.frame.size.width - 199 - (child.frame.size.width/2) oldValue:[self.selected indexOfObject:child]], self.frame.size.height/2)];
+            [child setPosition:CGPointMake([self mapWithOldMin:0 oldMax:[self.selected count]-1 newMin:firstWidth/2 newMax:self.frame.size.width - (lastWidth/2) - 200 oldValue:[self.selected indexOfObject:child]], self.frame.size.height/2)];
         }
         for (SKSpriteNode *child in self.notSelected) {
             [child setPosition:CGPointMake(self.frame.size.width - (child.frame.size.width/2), [self mapWithOldMin:0 oldMax:[self.notSelected count]-1 newMin:(self.frame.size.height/5) newMax:(self.frame.size.height/5)*4 oldValue:[self.notSelected indexOfObject:child]])];
@@ -74,8 +81,13 @@ bool draging = false;
     }
 }
 
+#pragma mark - Touch Functions
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
+    
+    SKSpriteNode *selectedRemove;
+    SKSpriteNode *notSelectedRemove;
     
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
@@ -83,16 +95,39 @@ bool draging = false;
         for (SKSpriteNode *child in self.children) {
             if (CGRectContainsPoint(child.frame, location)) {
                 if ([child.name containsString:@"Defence"]) {
-                    draging = true;
                     
-                    //add drag tag
+                    const char dLetter = *[[child.name substringFromIndex: [child.name length] - 3] cStringUsingEncoding:[NSString defaultCStringEncoding]];
                     
-                    child.name = [NSString stringWithFormat:@"%@ drag",child.name];
-                    child.position = location;
+                   if ([self.notSelected containsObject:child]) {
+                        
+                        for (SKSpriteNode *subChild in self.selected) {
+                            
+                            if ([subChild.name containsString:[NSString stringWithFormat:@" %c ", dLetter]]) {
+                                selectedRemove = subChild;
+                                notSelectedRemove = child;
+                            }
+                        }
+                   } else {
+                    
+                       draging = true;
+                    
+                       //add drag tag
+                    
+                       child.name = [NSString stringWithFormat:@"%@ drag",child.name];
+                       child.position = location;
+                   }
+                
                 }
             }
         }
     }
+    if (notSelectedRemove && selectedRemove) {
+        NSUInteger index = [self.selected indexOfObject:selectedRemove];
+        NSUInteger notIndex = [self.notSelected indexOfObject:notSelectedRemove];
+        [self.selected replaceObjectAtIndex:index withObject:notSelectedRemove];
+        [self.notSelected replaceObjectAtIndex:notIndex withObject:selectedRemove];
+    }
+    
 }
 
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
