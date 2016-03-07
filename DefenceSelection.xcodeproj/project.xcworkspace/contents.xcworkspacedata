@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SharkScout V.2.xcodeproj">
+      location = "self:/Users/Julien/Documents/Xcode/SharkScout V.2/DefenceSelection.xcodeproj">
    </FileRef>
 </Workspace>

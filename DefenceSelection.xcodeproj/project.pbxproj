@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F9EC11D21C887C0200098813 /* SharkScout V.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SharkScout V.2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9EC11D21C887C0200098813 /* DefenceSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefenceSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EC11D61C887C0300098813 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9EC11D81C887C0300098813 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F9EC11D91C887C0300098813 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,10 +50,10 @@
 		F9EC11E61C887C0300098813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9EC11E91C887C0300098813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9EC11EB1C887C0300098813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9EC11F01C887C0300098813 /* SharkScout V.2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SharkScout V.2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9EC11F01C887C0300098813 /* DefenceSelection.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DefenceSelection.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EC11F41C887C0300098813 /* SharkScout_V_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharkScout_V_2Tests.m; sourceTree = "<group>"; };
 		F9EC11F61C887C0300098813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9EC11FB1C887C0300098813 /* SharkScout V.2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SharkScout V.2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9EC11FB1C887C0300098813 /* DefenceSelection.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DefenceSelection.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EC11FF1C887C0300098813 /* SharkScout_V_2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharkScout_V_2UITests.m; sourceTree = "<group>"; };
 		F9EC12011C887C0300098813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,9 +96,9 @@
 		F9EC11D31C887C0200098813 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F9EC11D21C887C0200098813 /* SharkScout V.2.app */,
-				F9EC11F01C887C0300098813 /* SharkScout V.2Tests.xctest */,
-				F9EC11FB1C887C0300098813 /* SharkScout V.2UITests.xctest */,
+				F9EC11D21C887C0200098813 /* DefenceSelection.app */,
+				F9EC11F01C887C0300098813 /* DefenceSelection.xctest */,
+				F9EC11FB1C887C0300098813 /* DefenceSelection.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F9EC11D11C887C0200098813 /* SharkScout V.2 */ = {
+		F9EC11D11C887C0200098813 /* DefenceSelection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F9EC12041C887C0300098813 /* Build configuration list for PBXNativeTarget "SharkScout V.2" */;
+			buildConfigurationList = F9EC12041C887C0300098813 /* Build configuration list for PBXNativeTarget "DefenceSelection" */;
 			buildPhases = (
 				F9EC11CE1C887C0200098813 /* Sources */,
 				F9EC11CF1C887C0200098813 /* Frameworks */,
@@ -163,14 +163,14 @@
 			);
 			dependencies = (
 			);
-			name = "SharkScout V.2";
+			name = DefenceSelection;
 			productName = "SharkScout V.2";
-			productReference = F9EC11D21C887C0200098813 /* SharkScout V.2.app */;
+			productReference = F9EC11D21C887C0200098813 /* DefenceSelection.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F9EC11EF1C887C0300098813 /* SharkScout V.2Tests */ = {
+		F9EC11EF1C887C0300098813 /* DefenceSelectionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F9EC12071C887C0300098813 /* Build configuration list for PBXNativeTarget "SharkScout V.2Tests" */;
+			buildConfigurationList = F9EC12071C887C0300098813 /* Build configuration list for PBXNativeTarget "DefenceSelectionTests" */;
 			buildPhases = (
 				F9EC11EC1C887C0300098813 /* Sources */,
 				F9EC11ED1C887C0300098813 /* Frameworks */,
@@ -181,14 +181,14 @@
 			dependencies = (
 				F9EC11F21C887C0300098813 /* PBXTargetDependency */,
 			);
-			name = "SharkScout V.2Tests";
+			name = DefenceSelectionTests;
 			productName = "SharkScout V.2Tests";
-			productReference = F9EC11F01C887C0300098813 /* SharkScout V.2Tests.xctest */;
+			productReference = F9EC11F01C887C0300098813 /* DefenceSelection.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F9EC11FA1C887C0300098813 /* SharkScout V.2UITests */ = {
+		F9EC11FA1C887C0300098813 /* DefenceSelectionUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F9EC120A1C887C0300098813 /* Build configuration list for PBXNativeTarget "SharkScout V.2UITests" */;
+			buildConfigurationList = F9EC120A1C887C0300098813 /* Build configuration list for PBXNativeTarget "DefenceSelectionUITests" */;
 			buildPhases = (
 				F9EC11F71C887C0300098813 /* Sources */,
 				F9EC11F81C887C0300098813 /* Frameworks */,
@@ -199,9 +199,9 @@
 			dependencies = (
 				F9EC11FD1C887C0300098813 /* PBXTargetDependency */,
 			);
-			name = "SharkScout V.2UITests";
+			name = DefenceSelectionUITests;
 			productName = "SharkScout V.2UITests";
-			productReference = F9EC11FB1C887C0300098813 /* SharkScout V.2UITests.xctest */;
+			productReference = F9EC11FB1C887C0300098813 /* DefenceSelection.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F9EC11CD1C887C0200098813 /* Build configuration list for PBXProject "SharkScout V.2" */;
+			buildConfigurationList = F9EC11CD1C887C0200098813 /* Build configuration list for PBXProject "DefenceSelection" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -242,9 +242,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F9EC11D11C887C0200098813 /* SharkScout V.2 */,
-				F9EC11EF1C887C0300098813 /* SharkScout V.2Tests */,
-				F9EC11FA1C887C0300098813 /* SharkScout V.2UITests */,
+				F9EC11D11C887C0200098813 /* DefenceSelection */,
+				F9EC11EF1C887C0300098813 /* DefenceSelectionTests */,
+				F9EC11FA1C887C0300098813 /* DefenceSelectionUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,12 +310,12 @@
 /* Begin PBXTargetDependency section */
 		F9EC11F21C887C0300098813 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F9EC11D11C887C0200098813 /* SharkScout V.2 */;
+			target = F9EC11D11C887C0200098813 /* DefenceSelection */;
 			targetProxy = F9EC11F11C887C0300098813 /* PBXContainerItemProxy */;
 		};
 		F9EC11FD1C887C0300098813 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F9EC11D11C887C0200098813 /* SharkScout V.2 */;
+			target = F9EC11D11C887C0200098813 /* DefenceSelection */;
 			targetProxy = F9EC11FC1C887C0300098813 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -428,8 +428,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "SharkScout V.2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "bigThing.SharkScout-V-2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = bigThing.DefenceSelection;
+				PRODUCT_NAME = DefenceSelection;
 			};
 			name = Debug;
 		};
@@ -439,8 +439,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "SharkScout V.2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "bigThing.SharkScout-V-2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = bigThing.DefenceSelection;
+				PRODUCT_NAME = DefenceSelection;
 			};
 			name = Release;
 		};
@@ -452,8 +452,8 @@
 				INFOPLIST_FILE = "SharkScout V.2Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bigThing.SharkScout-V-2Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharkScout V.2.app/SharkScout V.2";
+				PRODUCT_NAME = DefenceSelection;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DefenceSelection.app/DefenceSelection";
 			};
 			name = Debug;
 		};
@@ -464,8 +464,8 @@
 				INFOPLIST_FILE = "SharkScout V.2Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bigThing.SharkScout-V-2Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharkScout V.2.app/SharkScout V.2";
+				PRODUCT_NAME = DefenceSelection;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DefenceSelection.app/DefenceSelection";
 			};
 			name = Release;
 		};
@@ -476,7 +476,7 @@
 				INFOPLIST_FILE = "SharkScout V.2UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bigThing.SharkScout-V-2UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DefenceSelection;
 				TEST_TARGET_NAME = "SharkScout V.2";
 				USES_XCTRUNNER = YES;
 			};
@@ -488,7 +488,7 @@
 				INFOPLIST_FILE = "SharkScout V.2UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bigThing.SharkScout-V-2UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DefenceSelection;
 				TEST_TARGET_NAME = "SharkScout V.2";
 				USES_XCTRUNNER = YES;
 			};
@@ -497,7 +497,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F9EC11CD1C887C0200098813 /* Build configuration list for PBXProject "SharkScout V.2" */ = {
+		F9EC11CD1C887C0200098813 /* Build configuration list for PBXProject "DefenceSelection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9EC12021C887C0300098813 /* Debug */,
@@ -506,29 +506,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F9EC12041C887C0300098813 /* Build configuration list for PBXNativeTarget "SharkScout V.2" */ = {
+		F9EC12041C887C0300098813 /* Build configuration list for PBXNativeTarget "DefenceSelection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9EC12051C887C0300098813 /* Debug */,
 				F9EC12061C887C0300098813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		F9EC12071C887C0300098813 /* Build configuration list for PBXNativeTarget "SharkScout V.2Tests" */ = {
+		F9EC12071C887C0300098813 /* Build configuration list for PBXNativeTarget "DefenceSelectionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9EC12081C887C0300098813 /* Debug */,
 				F9EC12091C887C0300098813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		F9EC120A1C887C0300098813 /* Build configuration list for PBXNativeTarget "SharkScout V.2UITests" */ = {
+		F9EC120A1C887C0300098813 /* Build configuration list for PBXNativeTarget "DefenceSelectionUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9EC120B1C887C0300098813 /* Debug */,
 				F9EC120C1C887C0300098813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
