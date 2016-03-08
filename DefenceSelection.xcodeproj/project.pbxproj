@@ -15,8 +15,6 @@
 		F9EC11E51C887C0300098813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9EC11E31C887C0300098813 /* Main.storyboard */; };
 		F9EC11E71C887C0300098813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9EC11E61C887C0300098813 /* Assets.xcassets */; };
 		F9EC11EA1C887C0300098813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9EC11E81C887C0300098813 /* LaunchScreen.storyboard */; };
-		F9EC11F51C887C0300098813 /* SharkScout_V_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EC11F41C887C0300098813 /* SharkScout_V_2Tests.m */; };
-		F9EC12001C887C0300098813 /* SharkScout_V_2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EC11FF1C887C0300098813 /* SharkScout_V_2UITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +49,7 @@
 		F9EC11E91C887C0300098813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9EC11EB1C887C0300098813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9EC11F01C887C0300098813 /* DefenceSelection.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DefenceSelection.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9EC11F41C887C0300098813 /* SharkScout_V_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharkScout_V_2Tests.m; sourceTree = "<group>"; };
-		F9EC11F61C887C0300098813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9EC11FB1C887C0300098813 /* DefenceSelection.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DefenceSelection.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9EC11FF1C887C0300098813 /* SharkScout_V_2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharkScout_V_2UITests.m; sourceTree = "<group>"; };
-		F9EC12011C887C0300098813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				F9EC11D41C887C0300098813 /* DefenceSelection */,
-				F9EC11F31C887C0300098813 /* SharkScout V.2Tests */,
-				F9EC11FE1C887C0300098813 /* SharkScout V.2UITests */,
 				F9EC11D31C887C0200098813 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,24 +121,6 @@
 				F9EC11D61C887C0300098813 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F9EC11F31C887C0300098813 /* SharkScout V.2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				F9EC11F41C887C0300098813 /* SharkScout_V_2Tests.m */,
-				F9EC11F61C887C0300098813 /* Info.plist */,
-			);
-			path = "SharkScout V.2Tests";
-			sourceTree = "<group>";
-		};
-		F9EC11FE1C887C0300098813 /* SharkScout V.2UITests */ = {
-			isa = PBXGroup;
-			children = (
-				F9EC11FF1C887C0300098813 /* SharkScout_V_2UITests.m */,
-				F9EC12011C887C0300098813 /* Info.plist */,
-			);
-			path = "SharkScout V.2UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9EC11F51C887C0300098813 /* SharkScout_V_2Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9EC12001C887C0300098813 /* SharkScout_V_2UITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

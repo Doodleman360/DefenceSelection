@@ -79,7 +79,7 @@ bool draging = false;
             [child setPosition:CGPointMake([self mapWithOldMin:0 oldMax:[self.selected count]-1 newMin:firstWidth/2 newMax:self.frame.size.width - (lastWidth/2) - 200 oldValue:[self.selected indexOfObject:child]], self.frame.size.height/2)];
         }
         for (SKSpriteNode *child in self.notSelected) {
-            [child setPosition:CGPointMake(self.frame.size.width - (child.frame.size.width/2), [self mapWithOldMin:0 oldMax:[self.notSelected count]-1 newMin:(self.frame.size.height/5) newMax:(self.frame.size.height/5)*4 oldValue:[self.notSelected indexOfObject:child]])];
+            [child setPosition:CGPointMake(self.frame.size.width - (child.frame.size.width/2), [self mapWithOldMin:0 oldMax:[self.notSelected count]-1 newMin:(self.frame.size.height/5)*4 newMax:(self.frame.size.height/5) oldValue:[self.notSelected indexOfObject:child]])];
         }
     }
 }
