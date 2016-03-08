@@ -189,6 +189,14 @@ bool draging = false;
     divider.name = @"divider";
     [self addChild:divider];
     
+    SKLabelNode *notSelectedLable = [SKLabelNode labelNodeWithFontNamed:@"Menlo-Regular"];
+    notSelectedLable.text = @"A";
+    notSelectedLable.name = @"label";
+    notSelectedLable.fontSize = 45;
+    notSelectedLable.position = CGPointMake(self.frame.size.width - (notSelectedLable.frame.size.width/2), self.frame.size.height - (notSelectedLable.frame.size.height/2));
+    notSelectedLable.fontColor = [UIColor blackColor];
+    [self addChild:notSelectedLable];
+    
     //A
     
     A1.xScale = 0.5;
