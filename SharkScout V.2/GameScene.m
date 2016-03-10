@@ -118,6 +118,8 @@ bool draging = false;
                     
                        child.name = [NSString stringWithFormat:@"%@ drag",child.name];
                        child.position = location;
+                       
+                       child.zPosition = 9000;
                    }
                 
                 }
@@ -161,6 +163,8 @@ bool draging = false;
                 
                 child.name = [child.name substringToIndex:[child.name length] - 5];
                 
+                child.zPosition = 1;
+                
                 for (SKSpriteNode *testChild in self.children) {
                     if (CGRectContainsPoint(testChild.frame, location)) {
                         [self.selected exchangeObjectAtIndex:[self.selected indexOfObject:child] withObjectAtIndex:[self.selected indexOfObject:testChild]];
@@ -190,10 +194,10 @@ bool draging = false;
     [self addChild:divider];
     
     SKLabelNode *notSelectedLable = [SKLabelNode labelNodeWithFontNamed:@"Menlo-Regular"];
-    notSelectedLable.text = @"A";
+    notSelectedLable.text = @"Not Selected";
     notSelectedLable.name = @"label";
-    notSelectedLable.fontSize = 45;
-    notSelectedLable.position = CGPointMake(self.frame.size.width - (notSelectedLable.frame.size.width/2), self.frame.size.height - (notSelectedLable.frame.size.height/2));
+    notSelectedLable.fontSize = 27;
+    notSelectedLable.position = CGPointMake(self.frame.size.width - (notSelectedLable.frame.size.width/2), self.size.height- (notSelectedLable.frame.size.height));
     notSelectedLable.fontColor = [UIColor blackColor];
     [self addChild:notSelectedLable];
     
